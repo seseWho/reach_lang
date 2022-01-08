@@ -26,6 +26,12 @@ Next, download Reach by running7
 $ curl https://docs.reach.sh/reach -o reach ; chmod +x reach
 You'll know that the download worked if you can run8
 
+It's recommend you copy reach program  to any /etc/environment path
+$  cat /etc/environment
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+
+$ sudo cp YOUR_TEMP_REACH_PATH . 
+
  
 $ ./reach version
 The recommended next step, although optional, is to set up your environment with9
@@ -45,6 +51,7 @@ You'll know that everything is in order if you can run13
  
 $ ./reach compile --help
 
+
 ..........
 
 This is now enough for Reach to compile and run our program. Let's try by running42
@@ -58,3 +65,5 @@ The entire process that we just went through can be automated by running44
  
 $ ./reach init
 when you start your next project!
+
+
